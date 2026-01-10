@@ -1,0 +1,278 @@
+.financial-planning-page {
+  padding: 20px;
+  padding-bottom: 100px;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  .page-header {
+    margin-bottom: 30px;
+
+    h1 {
+      font-size: 26px;
+      color: #1f2937;
+      margin-bottom: 5px;
+    }
+
+    p {
+      color: #6b7280;
+      font-size: 15px;
+    }
+  }
+
+  .calculator-section {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 20px;
+      color: #1f2937;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+
+      label {
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        color: #374151;
+        margin-bottom: 8px;
+      }
+
+      input, select {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #e5e7eb;
+        border-radius: 8px;
+        font-size: 15px;
+        color: #1f2937;
+        outline: none;
+
+        &:focus {
+          border-color: #2563eb;
+        }
+      }
+    }
+
+    .cost-breakdown {
+      margin-top: 30px;
+      background: #f9fafb;
+      border-radius: 10px;
+      padding: 20px;
+
+      h3 {
+        font-size: 18px;
+        color: #1f2937;
+        margin-bottom: 20px;
+      }
+
+      h4 {
+        font-size: 15px;
+        color: #4b5563;
+        margin: 15px 0 10px;
+      }
+
+      .breakdown-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 0;
+        border-bottom: 1px solid #e5e7eb;
+
+        &.sub {
+          padding: 8px 0 8px 20px;
+          font-size: 14px;
+          color: #6b7280;
+        }
+
+        &.subtotal {
+          font-weight: 600;
+          color: #374151;
+          margin-top: 5px;
+        }
+
+        &.total {
+          border-bottom: none;
+          border-top: 3px solid #2563eb;
+          padding: 15px 0;
+          font-weight: bold;
+          font-size: 18px;
+          color: #1f2937;
+          margin-top: 15px;
+
+          .amount {
+            color: #2563eb;
+            font-size: 24px;
+          }
+        }
+
+        .amount {
+          font-weight: 700;
+          color: #2563eb;
+        }
+      }
+
+      .breakdown-section {
+        margin: 15px 0;
+      }
+    }
+  }
+
+  .scholarships-section {
+    margin-bottom: 30px;
+
+    h2 {
+      font-size: 22px;
+      color: #1f2937;
+      margin-bottom: 20px;
+    }
+
+    .scholarships-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+
+      .scholarship-card {
+        background: white;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+
+        &:hover {
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+          transform: translateY(-5px);
+        }
+
+        .scholarship-header {
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          margin-bottom: 20px;
+          padding-bottom: 15px;
+          border-bottom: 2px solid #f3f4f6;
+
+          i {
+            font-size: 24px;
+            color: #fbbf24;
+          }
+
+          h3 {
+            font-size: 18px;
+            color: #1f2937;
+          }
+        }
+
+        .scholarship-details {
+          margin-bottom: 20px;
+
+          .detail-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #f3f4f6;
+
+            &:last-child {
+              border-bottom: none;
+            }
+
+            .label {
+              font-size: 13px;
+              color: #6b7280;
+              font-weight: 500;
+            }
+
+            .value {
+              font-size: 14px;
+              color: #1f2937;
+              font-weight: 600;
+              text-align: right;
+            }
+          }
+        }
+
+        .apply-btn {
+          width: 100%;
+          padding: 12px;
+          background: #2563eb;
+          color: white;
+          border: none;
+          border-radius: 8px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background: #1d4ed8;
+          }
+        }
+      }
+    }
+  }
+
+  .education-loan-section {
+    h2 {
+      font-size: 22px;
+      color: #1f2937;
+      margin-bottom: 20px;
+    }
+
+    .loan-partners {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+
+      .partner-card {
+        background: white;
+        border-radius: 12px;
+        padding: 25px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        text-align: center;
+
+        h3 {
+          font-size: 20px;
+          color: #1f2937;
+          margin-bottom: 12px;
+        }
+
+        p {
+          font-size: 14px;
+          color: #6b7280;
+          margin-bottom: 20px;
+        }
+
+        .contact-btn {
+          width: 100%;
+          padding: 12px;
+          background: white;
+          color: #2563eb;
+          border: 2px solid #2563eb;
+          border-radius: 8px;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s ease;
+
+          &:hover {
+            background: #eff6ff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .financial-planning-page {
+    .scholarships-section .scholarships-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .education-loan-section .loan-partners {
+      grid-template-columns: 1fr;
+    }
+  }
+}
