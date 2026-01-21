@@ -3,12 +3,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import BottomNav from "./components/BottomNav/BottomNav";
 import Home from "./pages/Home/Home";
-import Search from "./pages/Search/Search";
-import Applications from "./pages/Applications/Applications";
-import Documents from "./pages/Documents/Documents";
+import Destinations from "./pages/Destinations/Destinations";
+import Packages from "./pages/Packages/Packages";
+import Bookings from "./pages/Bookings/Bookings";
 import Profile from "./pages/Profile/Profile";
-import UniversityDetail from "./pages/UniversityDetail/UniversityDetail";
-import FinancialPlanning from "./pages/FinancialPlanning/FinancialPlanning";
 
 function App() {
   return (
@@ -18,19 +16,11 @@ function App() {
         <div className="app-content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/search" element={<Search />} />
-            <Route path="/applications" element={<Applications />} />
-            <Route path="/documents" element={<Documents />} />
+            <Route path="/destinations" element={<Destinations />} />
+            <Route path="/packages" element={<Packages />} />
+            <Route path="/bookings" element={<Bookings />} />
             <Route path="/profile" element={<Profile />} />
-            <Route path="/university/:id" element={<UniversityDetail />} />
-            <Route path="/financial-planning" element={<FinancialPlanning />} />
-
-            {/* Placeholder routes */}
-            <Route path="/eligibility" element={<PlaceholderPage title="Eligibility Checker" />} />
-            <Route path="/compare" element={<PlaceholderPage title="Compare Universities" />} />
-            <Route path="/scholarships" element={<PlaceholderPage title="Scholarships" />} />
-            <Route path="/book-consultation" element={<PlaceholderPage title="Book Consultation" />} />
-            <Route path="/notifications" element={<PlaceholderPage title="Notifications" />} />
+            <Route path="/destination/:id" element={<PlaceholderPage title="Destination Details" />} />
           </Routes>
         </div>
         <BottomNav />
@@ -58,7 +48,7 @@ const PlaceholderPage = ({ title }) => (
       href="/"
       style={{
         display: 'inline-block',
-        background: '#2563eb',
+        background: '#667eea',
         color: 'white',
         padding: '12px 30px',
         borderRadius: '8px',
