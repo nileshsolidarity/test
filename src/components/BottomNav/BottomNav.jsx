@@ -7,9 +7,9 @@ const BottomNav = () => {
 
   const navItems = [
     { path: '/', icon: 'fa-home', label: 'Home' },
-    { path: '/search', icon: 'fa-search', label: 'Search' },
-    { path: '/applications', icon: 'fa-file-alt', label: 'Applications' },
-    { path: '/documents', icon: 'fa-folder', label: 'Documents' },
+    { path: '/destinations', icon: 'fa-map-marked-alt', label: 'Destinations' },
+    { path: '/packages', icon: 'fa-suitcase', label: 'Packages' },
+    { path: '/bookings', icon: 'fa-ticket-alt', label: 'Bookings' },
     { path: '/profile', icon: 'fa-user', label: 'Profile' }
   ];
 

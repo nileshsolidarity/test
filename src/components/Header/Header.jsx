@@ -17,7 +17,7 @@ const Header = ({ title, showBack, showNotifications = true }) => {
         )}
 
         <div className="header-title">
-          {!showBack && <div className="logo">SOEGIS</div>}
+          {!showBack && <div className="logo"><i className="fas fa-plane"></i> GoTravel CC</div>}
           {title && <h1>{title}</h1>}
         </div>
 
